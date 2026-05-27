@@ -26,11 +26,17 @@
         <scope>import</scope>
       </dependency>
 
-	 <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.7.10</version>
-        </dependency>
+	  <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.7.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.cdimacio</groupId>
+        <artifactId>dotenv-java</artifactId>
+        <version>3.0.0</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
@@ -46,6 +52,19 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.10</version>
+    </dependency>
+
+    <!-- Source: https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
+    <dependency>
+      <groupId>io.github.cdimascio</groupId>
+      <artifactId>dotenv-java</artifactId>
+      <version>3.0.0</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 

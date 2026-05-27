@@ -643,7 +643,7 @@ public record TeacherMainConsole(TeacherAccountService ACC_SERVICE,
             e.printStackTrace();
         }
 
-        System.out.println("Successful exit.");
+        System.out.print("\rSuccessful exit.");
     }
 
     public static void startTeacherConsole() {

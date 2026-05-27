@@ -34,7 +34,7 @@ public class App {
                     e.printStackTrace();
                 }
 
-                System.out.println("Successful exit.");
+                System.out.print("\rSuccessful exit.");
             }
 
             default -> System.out.println("Wrong input!");
@@ -55,8 +55,10 @@ public class App {
         while (sisConsoleIsRunning) {
             System.out.println("\nSTUDENT MANAGEMENT SYSTEM");
             showMenu();
+
             System.out.print("Enter choice here: ");
             String choice = sc.nextLine();
+
             handleChoice(choice);
         }
     }

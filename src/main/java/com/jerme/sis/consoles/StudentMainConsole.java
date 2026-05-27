@@ -235,7 +235,7 @@ public class StudentMainConsole {
             e.printStackTrace();
         }
 
-        System.out.println("Successful exit.");
+        System.out.print("\rSuccessful exit.");
     }
 
     private boolean mainConsoleIsRunning = false;
