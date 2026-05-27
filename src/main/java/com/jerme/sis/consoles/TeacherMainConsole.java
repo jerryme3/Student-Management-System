@@ -570,7 +570,7 @@ public record TeacherMainConsole(TeacherAccountService ACC_SERVICE,
         System.out.printf("|%-9s | %-45s | %-7s | %-5s | %-40s |%n", "School ID", "Name", "Program", "GWA", "School Email");
 
         if (STUDENT_REPO.read(query).isEmpty())
-            System.out.println("|                                         NO STUDENT IS ENROLLED                                         |");
+        System.out.println("|                                                NO STUDENT IS ENROLLED                                                 |");
 
         for (Student student : STUDENT_REPO.read(query)) {
             String name = student.getFirstName() + " " + student.getMiddleName() + " " + student.getLastName();
